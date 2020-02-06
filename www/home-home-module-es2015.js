@@ -86,6 +86,7 @@ __webpack_require__.r(__webpack_exports__);
 let HomePage = class HomePage {
     constructor() { }
     load() {
+        window.aaatesting = true;
         QSI.API.unload();
         QSI.API.load().then(() => QSI.API.run());
     }

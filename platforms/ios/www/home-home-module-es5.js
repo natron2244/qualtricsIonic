@@ -90,6 +90,7 @@ var HomePage = /** @class */ (function () {
     function HomePage() {
     }
     HomePage.prototype.load = function () {
+        window.aaatesting = true;
         QSI.API.unload();
         QSI.API.load().then(function () {
             return QSI.API.run();
