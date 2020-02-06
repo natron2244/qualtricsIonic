@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+// Define Qualtrics
+declare var QSI: any;
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +10,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() { }
 
+  load() {
+    QSI.API.unload();
+    QSI.API.load().then(() =>
+      QSI.API.run());
+  }
 }

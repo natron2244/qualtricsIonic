@@ -1,5 +1,7 @@
 {
   "name": "qualtricsIonic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
